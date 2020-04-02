@@ -8,11 +8,15 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FreshHarvest.Domain", "src\FreshHarvest.Domain\FreshHarvest.Domain.fsproj", "{11EA5E36-B194-49AE-A5D7-E28A585AD7B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{8DBBC145-B92A-49C4-854C-9996AB320070}"
-ProjectSection(SolutionItems) = preProject
-	.gitignore = .gitignore
-	README.md = README.md
-	azure-pipelines.yml = azure-pipelines.yml
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+		azure-pipelines.yml = azure-pipelines.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B78596BC-F0EA-44DD-B6C0-72743DAD1051}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FreshHarvest.Domain.UnitTests", "test\FreshHarvest.Domain.UnitTests\FreshHarvest.Domain.UnitTests.fsproj", "{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +43,21 @@ Global
 		{11EA5E36-B194-49AE-A5D7-E28A585AD7B0}.Release|x64.Build.0 = Release|Any CPU
 		{11EA5E36-B194-49AE-A5D7-E28A585AD7B0}.Release|x86.ActiveCfg = Release|Any CPU
 		{11EA5E36-B194-49AE-A5D7-E28A585AD7B0}.Release|x86.Build.0 = Release|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Debug|x64.Build.0 = Debug|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Debug|x86.Build.0 = Debug|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|x64.ActiveCfg = Release|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|x64.Build.0 = Release|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|x86.ActiveCfg = Release|Any CPU
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{11EA5E36-B194-49AE-A5D7-E28A585AD7B0} = {1A6066B3-2496-4336-80D4-59474E8B9857}
+		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4} = {B78596BC-F0EA-44DD-B6C0-72743DAD1051}
 	EndGlobalSection
 EndGlobal
