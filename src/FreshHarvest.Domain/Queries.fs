@@ -20,23 +20,23 @@ module SeedQueries =
         daysGrown % seed.Watering.FreqInDays = 0
 
     module PotSizes =
-        let isPotDeepEnough potDepth seed =
+        let private isPotDeepEnough potDepth seed =
             //TODO: maybe the depth you plant at and the depth it grows to need to be separate fields?
             seed.Planting.DepthInCm < potDepth
 
-        let isPotWideEnough potWidth seed =
+        let private isPotWideEnough potWidth seed =
             seed.Planting.DistanceInCm <= potWidth
 
-        let isPotLongEnough potLength seed =
+        let private isPotLongEnough potLength seed =
             seed.Planting.DistanceInCm <= potLength
 
         let isPotBigEnough potLength potWidth potDepth seed =
             isPotLongEnough potLength seed && isPotWideEnough potWidth seed && isPotDeepEnough potDepth seed
 
-        let howManySeedsFitLengthwise potLength seed =
+        let private howManySeedsFitLengthwise potLength seed =
             potLength / seed.Planting.DistanceInCm
 
-        let howManySeedsFitWidthwise potWidth seed =
+        let private howManySeedsFitWidthwise potWidth seed =
             potWidth / seed.Planting.DistanceInCm
 
         let howManySeedsFit potLength potWidth seed =
