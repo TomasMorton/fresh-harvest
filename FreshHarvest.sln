@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B78596BC-F
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FreshHarvest.Domain.UnitTests", "test\FreshHarvest.Domain.UnitTests\FreshHarvest.Domain.UnitTests.fsproj", "{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FreshHarvest.Data", "src\FreshHarvest.Data\FreshHarvest.Data.fsproj", "{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,9 +57,22 @@ Global
 		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|x64.Build.0 = Release|Any CPU
 		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|x86.ActiveCfg = Release|Any CPU
 		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4}.Release|x86.Build.0 = Release|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Debug|x64.Build.0 = Debug|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Debug|x86.Build.0 = Debug|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Release|x64.ActiveCfg = Release|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Release|x64.Build.0 = Release|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Release|x86.ActiveCfg = Release|Any CPU
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{11EA5E36-B194-49AE-A5D7-E28A585AD7B0} = {1A6066B3-2496-4336-80D4-59474E8B9857}
 		{247263C5-7F4C-49BA-8AE9-38C4A0DA79A4} = {B78596BC-F0EA-44DD-B6C0-72743DAD1051}
+		{4E10D764-CBDF-48D5-BA18-A44C05C9CACB} = {1A6066B3-2496-4336-80D4-59474E8B9857}
 	EndGlobalSection
 EndGlobal
