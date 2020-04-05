@@ -6,6 +6,14 @@ open System
 module SeedQueries =
     open Seeds
 
+    //Does the plant need to be supported for growing vertically?
+    //How long after planting can it be harvested?
+    //For how long will the plant yield vegetables?
+    //Does my plant need to be "hardened"?
+    //Is my plant frost-tender?
+    //Fertilisers?
+    //Pest-control?
+
     let dateToExpectSprouting (plantedDate: DateTime) seed =
         let daysToSprout =
             seed.DaysToSprout
