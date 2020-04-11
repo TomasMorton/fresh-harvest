@@ -3,6 +3,34 @@ module QueriesTests
 open System
 open FsCheck
 open FsCheck.Xunit
+open FreshHarvest.Domain.UnitTests.ResultHelper
+
+module Plants =
+    open FreshHarvest.Domain.Types.Plants
+    open FreshHarvest.Domain.Queries.Plants
+
+    module BrowsingPlants =
+        [<Property>]
+        let ``should return the names of plants when the query is successful`` (plants: Plant list) =
+            let query() = Result.Ok plants
+            let actual = browsePlants query
+
+            let expected =
+                plants
+                |> List.map (fun p -> p.Name)
+                |> Result.Ok
+
+            actual = expected
+
+        [<Property>]
+        let ``should return the failure when the query fails`` (result: Result<Plant list, string>) =
+            (isFailure result) ==> lazy
+
+            let query() = result
+            let actual = browsePlants query
+
+            isFailure actual = true
+
 
 module Seeds =
     module Watering =

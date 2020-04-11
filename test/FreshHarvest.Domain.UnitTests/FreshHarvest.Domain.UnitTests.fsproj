@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="ResultHelper.fs" />
     <Compile Include="QueriesTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

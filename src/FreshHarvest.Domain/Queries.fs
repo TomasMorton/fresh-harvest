@@ -2,6 +2,15 @@ module FreshHarvest.Domain.Queries
 
 open System
 
+module Plants =
+    open Types.Plants
+    
+    let browsePlants (listPlants) =
+        let getNames = List.map (fun p -> p.Name)
+        
+        listPlants ()
+        |> Result.map getNames
+        
 module Seeds =
     open Types.Seeds
 
